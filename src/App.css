@@ -1,0 +1,318 @@
+.App {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Slidebar {
+    height: 100%;
+    background-color: #19161f;
+}
+
+.Slidebar .Category-nav {
+    color: #6a676e;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.SlidebarList {
+    height: auto;
+    padding: 0;
+    width: 100%;
+    margin-top: 0;
+}
+
+.SlidebarList .row {
+    width: 100%;
+    height: 40px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: #6a676e;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.SlidebarList .row:hover {
+    cursor: pointer;
+    background-color: #0d0d0f;
+    color: #e9e9eb;
+}
+
+.SlidebarList .row #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.SlidebarList .row #title {
+    flex: 70%;
+}
+
+.Slidebar hr {
+    border-width: 0.3px;
+    width: 80%;
+    color: #6a676e;
+    margin: 0;
+}
+
+.Slidebar .Logout {
+    height: auto;
+    padding-left: 0px;
+    width: 100%;
+    margin-top: 40%;
+}
+
+.Slidebar .Logout .row {
+    width: 100%;
+    height: 40px;
+    list-style-type: none;
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    color: #6a676e;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.Slidebar .Logout .row:hover {
+    cursor: pointer;
+    background-color: #0d0d0f;
+    color: #e9e9eb;
+}
+
+.Logout .row #icon {
+    flex: 30%;
+    display: grid;
+    place-items: center;
+}
+
+.Logout .row #title {
+    flex: 70%;
+}
+
+.Selection {
+    height: 100%;
+    background-color: #19161f;
+   
+    
+}
+
+.Selection .Search {
+    padding: 16px;
+}
+
+.Selection .Search-bar {
+    background-color: black;
+    border-radius: 20px;
+    width: 100%;
+    height: 30px;
+    color: white;
+    padding-left: 15px;
+    border-color: transparent;
+    background-image: url(image/icons8-search-30.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position-x: 5%;
+    background-position-y: center;
+    padding-left: 35px;
+    
+}
+
+.App .row {
+    margin: 0;
+}
+
+.row .col-sm-2 {
+    padding: 0;
+}
+
+.row .col-sm-8 {
+    padding: 0;
+}
+
+.Selection .Account {
+    padding: 10px;
+    display: inline-flex;
+    
+}
+
+.Selection .Account .Name h6 {
+    margin: 0;
+    color: #e9e9eb;
+}
+
+.Selection .Account .Name p{
+    margin: 0;
+    font-size: 15px;
+    color: #6a676e;
+}
+
+.Selection .Account .Slika {
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.Genre p {
+    color: #6a676e;
+    padding-left: 16px;
+}
+
+.Genre .Container {
+    flex-wrap: wrap;
+}
+
+.Genre .Container .DugmeKategorija {
+    background-color: #0d0d0f;
+    color: #6a676e;
+    border-radius: 40%;
+    margin: 5px 15px;
+}
+
+.Genre .Container .DugmeKategorija:hover {
+    background-color: red;
+    color: #e9e9eb;
+    
+}
+
+.col-sm-8 {
+    background-color: #0d0d0f;
+}
+
+.Content hr {
+    color: #6a676e;
+    margin: 0;
+    border-top-width: 3px;
+}
+
+.NavbarMenu{
+    background-color: #0d0d0f;
+}
+
+.NavbarMenu .col-md-6 {
+    padding: 0;
+    
+}
+
+.NavbarMenu .me-auto .nav-link{
+    color: #6a676e;
+}
+.NavbarMenu .me-auto .nav-link:hover{
+    color: #e9e9eb;
+}
+
+.NavbarMenu .me-auto-icon .nav-link{
+    color: #6a676e;
+}
+
+.NavbarMenu .me-auto-icon .nav-link:hover{
+    color: #e9e9eb;
+}
+
+.NavbarMenu #NavIcon {
+    justify-content: right;
+}
+
+.navbar-nav a.nav-link.active{
+    color: white;
+}
+
+.Trending {
+    padding: 10px 20px;
+}
+
+.Trending .Heading ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.Heading ul li {
+    display: inline;
+}
+
+.Heading .SeeAll {
+    float: right;
+}
+
+.Heading .SeeAll a {
+    color: #6a676e;
+    text-decoration: none;
+}
+
+.Heading .SeeAll :hover {
+    color: #e9e9eb;
+}
+
+.Heading .SeeAll .MuiSvgIcon-root  {
+    vertical-align: bottom;
+    color: #6a676e;
+}
+
+.Heading .Naslov {
+    font-size: 20px;
+    color: #e9e9eb;
+    
+}
+
+.Slider {
+    padding-top: 20px;
+}
+
+.slick-slide > div {
+    margin: 0 10px;
+  }
+.slick-list {
+    margin: 0 -10px;
+  }
+
+.Slider .Card {
+    border: 1px solid #0d0d0f;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+  
+    height: 330px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+.card-top h1 {
+    font-size: 0.9rem;
+    margin: 20px;
+  }
+  
+.card-top > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: black;
+  }
+  
+.card-bottom {
+    margin: 10px 20px;
+  }
+  
+.category {
+    position: relative;
+  }
+.category::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    height: 2px;
+  }
