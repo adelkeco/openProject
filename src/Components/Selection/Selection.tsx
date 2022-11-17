@@ -1,15 +1,24 @@
-import React from "react";
-import App from "../../App";
-import SearchIcon from '@mui/icons-material/Search';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { useEffect, useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import AddIcon from '@mui/icons-material/Add';
-
-
+import { GenresType } from 'types';
+import GenresService from 'services/genresService';
 
 
 function Selection() {
+    const [genres, setGenres] = useState<GenresType[]>([]);
+
+    useEffect(() => {
+        GenresService.getGenres()
+        .then((response: any) => {
+            setGenres(response.data.genres as GenresType[]);
+        })
+        .catch((err) => {
+            console.log('ERR', err)
+        });
+    }, []);
+
     return (
         <div className="Selection">
             <div className="Account">
@@ -29,16 +38,11 @@ function Selection() {
             <div className="Genre">
                 <p>GENRE</p>
                 <div className="Container">
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Action</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Crime</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Comedy</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Adventure</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Historical</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Science fiction</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Romance</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Horror</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Drama</Button>
-                    <Button className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>Documentary</Button>
+                    {
+                        genres.map((item: GenresType) => (
+                            <Button key={item.id} className="DugmeKategorija" variant="contained" endIcon={<AddIcon />}>{item.name}</Button>
+                        ))
+                    }
                 </div>
             </div>
         </div>
