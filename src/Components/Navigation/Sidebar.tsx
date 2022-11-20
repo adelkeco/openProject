@@ -1,7 +1,7 @@
-import {SlidebarData1} from './SlidebarData'
-import {SlidebarData2} from './SlidebarData'
-import {SlidebarData3} from './SlidebarData'
-import {SlidebarData4} from './SlidebarData'
+import {SlidebarData1} from 'Components/Navigation/SlidebarData'
+import {SlidebarData2} from 'Components/Navigation/SlidebarData'
+import {SlidebarData3} from 'Components/Navigation/SlidebarData'
+import {SlidebarData4} from 'Components/Navigation/SlidebarData'
 
 
 function Sidebar() {

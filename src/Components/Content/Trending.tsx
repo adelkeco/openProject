@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import StarRateIcon from '@mui/icons-material/StarRate';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -57,6 +58,7 @@ const Trending = () => {
       });
     }, []);
 
+
     return(
         <div className="Trending">
             <div className="Heading">
@@ -70,15 +72,14 @@ const Trending = () => {
                 <Slider {...settings}>
                 {trendingMovies.map((item: any)=>(
                     <div key={item.id} className="Card">
-                        <div className="card-top">
-                            <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title} />
-                              <h1>{item.title}</h1>
-                              
-                        </div>
+                        <img src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt={item.title} />
                         <div className="card-bottom">
-                              <h3>{item.price}</h3>
-                              <p className="category">{item.category}</p>
+                          <h1><b>{item.title}</b></h1>
+                          <p>{item.release_date}</p>
+                          <p><StarRateIcon/> {item.vote_average} rating</p>
                         </div>
+                        
+                      
                     </div>
                 ))}
                 </Slider>

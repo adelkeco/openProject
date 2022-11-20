@@ -134,6 +134,7 @@ body {
 
 .row .col-sm-2 {
     padding: 0;
+    height: 100vh;
 }
 
 .row .col-sm-8 {
@@ -171,7 +172,27 @@ body {
 
 .Genre .Container {
     flex-wrap: wrap;
+    overflow: auto;
+    height: 75vh;
 }
+
+.Genre .Container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Genre .Container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px gray;
+    border-radius: 10px;
+}
+
+.Genre .Container::-webkit-scrollbar-thumb {
+    background: #0d0d0f;
+    border-radius: 10px;
+}
+
+.Genre .Container::-webkit-scrollbar-thumb:hover {
+    background: #6a676e;
+} 
 
 .Genre .Container .DugmeKategorija {
     background-color: #0d0d0f;
@@ -284,26 +305,37 @@ body {
     border-radius: 10px;
     overflow: hidden;
   
-    height: 330px;
+    height: 250px;
     color: #fff;
     cursor: pointer;
   }
 
-.card-top h1 {
+.Card h1 {
     font-size: 0.9rem;
-    margin: 20px;
+    
   }
   
-.card-top > img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    background: black;
+.Card > img {
+    opacity: 0.6;
   }
   
 .card-bottom {
-    margin: 10px 20px;
-  }
+    margin: 10px 15px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.card-bottom h1 {
+    font-size: 20px;
+}
+
+.card-bottom p {
+    margin-bottom: 0;
+}
+
+.card-bottom p svg {
+    vertical-align: text-top;
+}
   
 .category {
     position: relative;

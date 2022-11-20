@@ -1,8 +1,8 @@
 import React from "react";
 import App from "../../App";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarMenu from "./Navbar";
-import Trending from "./Trending";
+import NavbarMenu from "Components/Content/Navbar";
+import Trending from "Components/Content/Trending";
 
 
 

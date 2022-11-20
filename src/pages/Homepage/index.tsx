@@ -1,6 +1,6 @@
-import Sidebar from 'components/Navigation/Sidebar';
-import Content from 'components/Content/Content';
-import Selection from 'components/Selection/Selection';
+import Sidebar from 'Components/Navigation/Sidebar';
+import Content from 'Components/Content/Content';
+import Selection from 'Components/Selection/Selection';
 
 const Homepage = () => {
     return (
