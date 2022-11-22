@@ -31,9 +31,9 @@ function NavbarMenu(){
                     <Navbar bg="#0d0d0f;" variant="#0d0d0f;">
                         <Container id="NavIcon">
                         <Nav className="me-auto-icon">
-                            <Nav.Link href="#movies"><OnlinePredictionIcon/></Nav.Link>
-                            <Nav.Link href="#series"><NotificationsIcon/></Nav.Link>
-                            <Nav.Link href="#tvshows"><GridViewIcon/></Nav.Link>
+                            <Nav.Link href="#live"><OnlinePredictionIcon/></Nav.Link>
+                            <Nav.Link href="#notification"><NotificationsIcon/></Nav.Link>
+                            <Nav.Link href="#grid"><GridViewIcon/></Nav.Link>
                         </Nav>
                         </Container>
                     </Navbar>

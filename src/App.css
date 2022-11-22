@@ -181,7 +181,7 @@ body {
 }
 
 .Genre .Container::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px gray;
+    box-shadow: inset 0 0 5px #19161f;
     border-radius: 10px;
 }
 
@@ -289,7 +289,7 @@ body {
 }
 
 .Slider {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .slick-slide > div {
@@ -335,8 +335,27 @@ body {
 
 .card-bottom p svg {
     vertical-align: text-top;
+    color: gold;
 }
-  
+
+.Card .card-top {
+    position: absolute;
+    top: 20px;
+    margin-left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+
+.card-top p {
+    margin-bottom: 0px;
+    padding: 2px 5px;
+}
+
+.card-top p svg {
+    vertical-align: text-top;
+    color: gold;
+}
+
 .category {
     position: relative;
   }
@@ -347,4 +366,18 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-  }
+}
+
+.TopRated {
+    margin-top: 15px;
+}
+
+.TopRated h3 {
+    font-size: 20px;
+    color: #e9e9eb;
+}
+
+.TopRated h3 svg {
+    vertical-align: text-top;
+    color: gold;
+}
