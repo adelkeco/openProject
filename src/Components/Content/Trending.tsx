@@ -109,7 +109,7 @@ const Trending = () => {
                           <p>{item.release_date}</p>
                         </div>
                         <div className='card-top'>
-                          <p><StarRateIcon/> <b>{item.vote_average}</b> </p>
+                          <p><StarRateIcon/> <b>{item.vote_average}</b></p>
                         </div>
                     </div>
                 ))}

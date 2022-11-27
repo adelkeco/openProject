@@ -7,5 +7,4 @@ const TopRatedService = {
         
     }
 }
-
 export default TopRatedService;
